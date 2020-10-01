@@ -18,13 +18,12 @@ class AppTest {
             JasperData jasperData = new JasperData();
             jasperData.jasperInputStream = jasperIS;
 
-            String content = "This is a <style isBold=\"true\" isItalic=\"true\" isUnderline=\"true\">static text</style> \n" +
-                    "\telement containing styled text. <style backcolor=\"yellow\" isBold=\"true\" isItalic=\"true\">Styled text</style> \n" +
-                    "\telements are introduced by setting the <style forecolor=\"blue\" isItalic=\"true\">markup</style> attribute \n" +
-                    "\tavailable for the <style isBold=\"true\" forecolor=\"magenta\">textElement</style> tag to \n" +
-                    "\t<style forecolor=\"red\" isItalic=\"true\">styled</style> and by formatting the text content using nested \n" +
-                    "\t<style isBold=\"true\" forecolor=\"green\">style</style> tags and simple HTML tags.\t" +
-                    "<style size=\"16\">1</style>\\n<style size=\"24\">2</style>\\n<style size=\"32\">3</style>\n";
+            String content = "<p>\n" +
+                    "      Lorem ipsum dolor sit amet, no dictas mollis <b><i>definiebas</i></b> cum, duo dolor quodsi ei.&nbsp;</p><p><br></p><p>Usu veniam\n" +
+                    "      honestatis eu. Iracundia instructior ad mea, eu eos nostro corrumpit cotidieque. Iracundia urbanitas\n" +
+                    "      signiferumque id usu, ex adversarium <u>consequuntur</u> definitionem quo. An per vituperata suscipiantur, graece\n" +
+                    "      persecuti eum in.\n" +
+                    "    </p>";
 
             jasperData.jrDataSource = new JRBeanCollectionDataSource(Collections.singleton(new Data(content)));
 

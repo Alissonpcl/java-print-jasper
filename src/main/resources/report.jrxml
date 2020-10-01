@@ -11,7 +11,7 @@
 		<band height="125" splitType="Stretch">
 			<textField>
 				<reportElement x="13" y="14" width="542" height="101" uuid="ad36e973-8ec8-4924-85ad-1de901895860"/>
-				<textElement markup="styled"/>
+				<textElement markup="html"/>
 				<textFieldExpression><![CDATA[$F{content}]]></textFieldExpression>
 			</textField>
 		</band>
